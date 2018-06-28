@@ -1,0 +1,10 @@
+body{background-color: #b3bdce }
+#wrapper{width:600px margin:auto}
+#userid{background-color: transparent; border:solid 1px black}
+#password{background-color: transparent; border:solid 1px black}
+#sayHi{text-align: right}
+#boxContent{height:1000px; background-color: #fcead4; margin-bottom: 15px}
+#boxContent{border: solid 1px black; border-top: none; padding: 5px; text-align: center}
+#left, #right:{min-height:500px}
+#left{width:50%; float:left}
+#right{width:50%; float:right}

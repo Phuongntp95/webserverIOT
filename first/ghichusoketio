@@ -1,0 +1,4 @@
+connect(): kết nối với server socket
+on(event_name, listener): đăng kí lắng nghe sự kiện từ server trả về
+emit(event_name, data): gửi một sự kiện lên server
+off(event_name): ngừng lắng nghe một sự kiện nào đó

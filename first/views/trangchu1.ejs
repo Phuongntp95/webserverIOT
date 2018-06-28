@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>demo nha</title>
+    <script src="jquery.js"></script>
+    <script src="/socket.io/socket.io.js"> </script>
+    <script src="xuly1.js"></script>
+    <link rel="stylesheet" type="text/css" href="layout1.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="loginForm">
+        <h1>LOGIN</h1>
+        <h2>userid</h2>
+        <input type="text" id="userid" value="abc"/><br>
+        <h2>password</h2>
+        <input type="password" id="password" value="123"/><br><br><br>
+        <input type="button" value="Đăng Nhập" id="btnDangNhap" />
+      </div>
+      <div id="viewForm">
+        <div id="sayHi">
+            Hello <span id="currentUser"></span>
+            <input type="button" value="LogOut" id="btnLogOut" />
+        </div>
+            <div id="content">
+              <h1>Thông tin cảm biến nhiệt độ độ ẩm</h1>
+
+
+              <div id="boxContent">
+                <div id="left">
+                    <input type="button" value="Cập nhật thông tin" id="btnUpdateSensor" />
+                    <h2> nhiệt độ </h2>
+                    <h3 id="humidity"><h3>
+                    <h2>độ ẩm</h2>
+                    <h3 id="temperature" ><h3>
+                    <h3 id="date"></h3>
+                </div>
+                <div id="right">
+                    <input type="button" value="Thống kê nhiệt độ độ ẩm trung bình" id="btnThongKe" />
+                    <h2> nhiệt độ </h2>
+                    <h3 id="humidity1"><h3>
+                    <h2>độ ẩm</h2>
+                    <h3 id="temperature1"><h3>
+                    <h3 id="date1"></h3>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>

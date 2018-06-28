@@ -1,0 +1,27 @@
+
+<html>
+	<head>
+		<title>demo socket</title>
+		<script src="jquery.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script>
+	// liên kết server
+			var socket = io("http://localhost:3000");
+			socket.on("server-send-data", function(data){ // data= data+"888"
+				$("#noidung").append(data + " , ");
+			});
+			$(Document).ready(function(){
+
+				$("#mrA").click(function(){
+					socket.emit("Client-send-data","hello")  //(ten emint,tham so emit)
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="mrA">Clickneba</div>
+		<h2 id="noidung"></h2>
+	</body>
+</html>

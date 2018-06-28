@@ -1,0 +1,6 @@
+thư viện cần thiết cho android
+dependencies{
+
+}
+thêm quyền truy cập internet cho ứng dụng của app trong file androiMainfest.xml
+<uses-permission android:name="android.permission.INTERNET"/> 
